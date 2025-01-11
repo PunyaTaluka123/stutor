@@ -1,9 +1,11 @@
-import './App.css';
-import Navbar from './components/Navbar.js';
+import React from 'react';
+import LandingPage from './components/landingPage';
 
 function App() {
   return (
-   <Navbar></Navbar>
+    <div className="App">
+      <LandingPage />
+    </div>
   );
 }
 

@@ -1,0 +1,54 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+    min-height: 60vh;
+    background-color: #f9f9f9; /* or white, or any color you like */
+  }
+  
+  /* Content */
+  .hero-content {
+    max-width: 600px;
+  }
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif; /* Example font */
+    letter-spacing: 2px;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Image */
+  .hero-image img {
+    width: 300px;
+    height: auto;
+  }
+  
+  /* Dotted swirl – example decorative line */
+  .hero::before {
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 2px dotted #000;
+    border-radius: 50%;
+    animation: swirl 8s linear infinite;
+  }
+  
+  @keyframes swirl {
+    0% {
+      transform: rotate(0deg) translateY(0);
+    }
+    100% {
+      transform: rotate(360deg) translateY(0);
+    }
+  }
+  
