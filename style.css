@@ -1,5 +1,3 @@
-@import url('https://fonts.cdnfonts.com/css/hangyaboly');
-
 /* General Styles */
 body {
     margin: 0;
@@ -13,10 +11,12 @@ body {
     padding: 10px 20px;
     background-color: #fff;
 }
-.navbar img{
+
+.navbar img {
     width: 100px;
     margin-left: 30px;  
 }
+
 /* Home Link (Left Section) */
 .navbar .home {
     text-decoration: none;
@@ -31,8 +31,6 @@ body {
 .navbar .nav-right {
     display: flex; /* Flex container for right links */
     gap: 20px; /*  links */
-
-    
 }
 
 .navbar .nav-right a {
@@ -43,29 +41,48 @@ body {
     align-items: center;
     gap: 10px; 
     margin-right: 50px;
-
 }
 
 .navbar i {
     font-size: 20px; /* Icon size */
 }
 
-.landingpage{
-    width:100%;
-    height:max-content;
+.landingpage {
+    width: 100%;
+    height: max-content;
+    display: flex; /* Align elements horizontally */
+    align-items: center;
+    padding: 100px 0; /* Vertical spacing */
+    position: relative; /* Ensure the child elements respect relative positioning */
 }
 
-.landingpage .text1{
+.landingpage .text {
+    max-width: 600px; /* Limit text width */
+    margin-left: 350px; /* Position text 50px from the left */
+    margin-right: 30px; /* Space between text and image */
+}
+
+.landingpage .text1 {
     font-size: 127px;
-    margin-left: 350px;
-    margin-top: 100px;
     font-family: 'Hangyaboly', sans-serif;
 }
 
-.landingpage .text2{
+.landingpage .text2 {
     font-size: medium;
-    margin-left: 350px;
     font-family: sans-serif;
-    overflow-wrap: break-word; 
-    
+    overflow-wrap: break-word;
+    width: 100%; 
+}
+
+.landingpage img {
+    width: 500px; /* Adjust size of the owl image */
+    height: auto;
+    position: absolute; /* Enable precise positioning */
+    right: 100px; /* Position 100px from the right */
+    top: 50%; /* Vertically center the image relative to the container */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+}
+
+#yelllow1{
+    z-index: -2;
 }
